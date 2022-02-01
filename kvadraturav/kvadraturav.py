@@ -121,14 +121,14 @@ def butterfly():
     x13=np.arange(-1,1.1,0.5)
     y13=-4*x13**2+2
     x14=np.arange(-1,1.5,0.5)
-    y14=4+*x14**2-6
+    y14=4*x14**2-6
     x15=np.arange(-2,0,0.5)
     y15=-1.5*x15+2
     x16=np.arange(0,2.5,0.5)
     y16=1.5*x16+2
     fig = plt.figure()
     plt.plot(x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6,x7,y7,x8,y8,x9,y9,x10,y10,x11,y11,x12,y12,x13,y13,x14,y14,x15,y15,x16,y16)
-    plt.title('Кит')
+    plt.title('Бабочка')
     plt.ylabel('y')
     plt.xlabel('x')
     plt.grid(True)
@@ -143,8 +143,10 @@ def figura():
         kala()
     elif valik==2:
         ochko()
-    else:
+    elif valik==3:
         zont()
+    else:
+        butterfly()
 
 def handler():    
     if (a.get()!="" and b.get()!="" and c.get()!=""):
